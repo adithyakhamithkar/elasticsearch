@@ -1,0 +1,7 @@
+- hosts: elasticsearch-master
+  #Specify remote_user and sudo if running as sudo user
+  remote_user: adithya
+  sudo: yes
+  roles:
+  - common
+  - elasticsearch-master

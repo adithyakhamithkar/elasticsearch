@@ -1,0 +1,3 @@
+- name: Setting elasticsearch-master
+  template: src=elasticsearch-master.j2 dest=/etc/elasticsearch/elasticsearch.yml
+  notify: restart elasticsearch

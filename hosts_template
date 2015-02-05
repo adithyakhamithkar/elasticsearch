@@ -1,0 +1,15 @@
+[all:vars]
+ansible_ssh_user=adithya
+
+[elasticsearch-master]
+
+elasticsearch-master-01 hostname=elasticsearch-master-01 esmaster=elasticsearch-master-01 ansible_ssh_host=192.168.44.138
+
+[elasticsearch-nodes]
+
+elasticsearch-node-01 hostname=elasticsearch-node-01 esmaster=elasticsearch-master-01 ansible_ssh_host=192.168.44.139
+
+elasticsearch-node-02 hostname=elasticsearch-node-02 esmaster=elasticsearch-master-01 ansible_ssh_host=192.168.44.140
+
+
+
