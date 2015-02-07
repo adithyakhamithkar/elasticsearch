@@ -8,4 +8,7 @@
   apt: name={{ item }} state=present force=yes
   with_items:
   - elasticsearch
-  notify: start elasticsearch 
+  notify: start elasticsearch
+
+- name: Set elasticsearch to start up by default
+  shell: sudo update-rc.d elasticsearch defaults 95 10

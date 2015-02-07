@@ -8,4 +8,5 @@
     shell: curl -XGET 'http://localhost:9200/_cluster/health?pretty=true'
     register: health
 
-  - debug: var=health.stdout_lines
+  - name: Print Health check
+    debug: var=health.stdout_lines
