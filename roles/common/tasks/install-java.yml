@@ -1,3 +1,4 @@
+---
 - name: Add the webupd8 APT repository
   apt_repository: repo="deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" state=present
 
@@ -9,4 +10,3 @@
   apt: name={{ item }} state=present force=yes
   with_items:
   - oracle-java8-installer
-

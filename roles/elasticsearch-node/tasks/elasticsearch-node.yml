@@ -1,3 +1,4 @@
+---
 - name: Setting elasticsearch-node
   template: src=elasticsearch-node.j2 dest=/etc/elasticsearch/elasticsearch.yml
   notify: restart elasticsearch

@@ -1,4 +1,5 @@
-- name: start elasticsearch 
+---
+- name: start elasticsearch
   service: name=elasticsearch state=started
 
 - name: restart elasticsearch

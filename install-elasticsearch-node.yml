@@ -1,3 +1,4 @@
+---
 - hosts: elasticsearch-nodes
   sudo: yes
   roles:

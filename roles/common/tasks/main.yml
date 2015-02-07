@@ -1,3 +1,4 @@
+---
 - hostname: name={{ hostname }}
 - include: install-java.yml
 - include: install-elasticsearch.yml

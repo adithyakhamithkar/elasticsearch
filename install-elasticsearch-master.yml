@@ -1,3 +1,4 @@
+---
 - hosts: elasticsearch-master
   sudo: yes
   roles:
