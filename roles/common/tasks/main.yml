@@ -1,5 +1,6 @@
 ---
 - hostname: name={{ hostname }}
+- include: motd.yml
 - include: install-java.yml
 - include: install-elasticsearch.yml
 - include: install-misc.yml
