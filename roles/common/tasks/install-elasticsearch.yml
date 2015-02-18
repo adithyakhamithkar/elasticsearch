@@ -13,3 +13,4 @@
 
 - name: Set elasticsearch to start up by default
   shell: sudo update-rc.d elasticsearch defaults 95 10
+  changed_when: false
